@@ -1,9 +1,8 @@
 from python_modules.tqdm import tqdm
-import requests
+from python_modules import requests
 import gzip
 import shutil
 import re
-import random
 
 
 def fetch_index_file(mirror_url, architecture, output_location):

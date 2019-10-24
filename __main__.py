@@ -1,9 +1,16 @@
-# 3rd party
-from python_modules import yaml
 # python internal
 import argparse
 import os
 import re
+import sys
+
+# add python modules to import path
+dir = re.sub(r'[^/]+(?=/$|$)', '', os.path.realpath(__file__)) + "python_modules"
+sys.path.append(dir)
+
+# 3rd party
+from python_modules import yaml
+
 # local
 import main
 from HotCache import HotCache
@@ -31,14 +38,14 @@ program_files = {}
 hot_cache = HotCache(params['number_of_items'])
 
 # iterate through file line by line and populate a dict with program => [files...] and populate the hot cache
-with open(file_path) as input_file:
+with open(file_path, errors="surrogateescape") as input_file:
     line_count = 0
     for entry in input_file:
         line_count += 1
-        print(f"Processing line: {line_count}", end="\r")
         data = re.split(r'\s+', entry)  # split the line
         file = data[0]
         programs = data[1].split(',')  # split the programs in case there's multiple
+        print(f"Processing line: {line_count}", end="\r")
         for program in programs:
             if program not in program_files:
                 program_files[program] = []
