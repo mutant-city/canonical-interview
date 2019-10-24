@@ -1,6 +1,8 @@
 ## Install
 1. Install dependencies locally
-    * `pip install --target python_modules  -r requirements.txt`
+    * Inside of the project folder:
+        * `pip install --target python_modules  -r requirements.txt`
+    * Move up one directory and run the program `python3 <yourfoldername> amd64`
 
 ## Run
 * The config file has adjustable parameters with sane defaults.
@@ -20,7 +22,7 @@
 
 ## Testing
 * This has not been unit or integration tested.
-* Grepping the file with a regex for the program, outputs the exact same counts as the python program, however.
+* Grepping the file with a regex for the program, however, outputs the exact same counts as the python program.
     * `grep -i '.*fonts/texlive-fonts-extra.*' /tmp/Contents-amd64.txt | wc -l`
 
 ## Potential performance Improvements
