@@ -3,13 +3,13 @@
 
 
 ## Install
-1. Install dependencies locally
+1. Install dependencies into python_modules
     * Inside of the project folder:
-        * `pip install --target python_modules  -r requirements.txt`
-    * Move up one directory and run the program `python3 <yourfoldername> amd64`
+        * `pip3 install --target python_modules  -r requirements.txt`
 
 ## Run
-* The config file has adjustable parameters with sane defaults.
+* Move up one directory above this project repo and run the program `python3 <yourfoldername> amd64`
+    * Note: The config file has adjustable parameters with sane defaults.
 
 ## Project Summary
 * This was an interesting project, that tested multiple facets of development:
@@ -22,7 +22,7 @@
  when a element with a bigger quantity is found it boots the smallest element 
  out of the hot cache.
 
-* I spent probably around 4 hours working on this.
+* I spent probably around 4 hours working on this
 
 ## Testing
 * This has not been unit or integration tested.
@@ -30,5 +30,4 @@
     * `grep -i '.*fonts/texlive-fonts-extra.*' /tmp/Contents-amd64.txt | wc -l`
 
 ## Potential performance Improvements
-* Multiprocessing on the file parsing.   
-* Check for a local file and ask to use that, if present. 
+* Multiprocessing on the file parsing. 
