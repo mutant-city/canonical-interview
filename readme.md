@@ -21,7 +21,7 @@
 ## Testing
 * This has not been unit or integration tested.
 * Grepping the file with a regex for the program, outputs the exact same counts as the python program, however.
-    * `grep -i '.*fonts/texlive-fonts-extra'.*' /tmp/Contents-amd64.txt | wc -l`
+    * `grep -i '.*fonts/texlive-fonts-extra.*' /tmp/Contents-amd64.txt | wc -l`
 
 ## Potential performance Improvements
 * Multiprocessing on the file parsing.   
