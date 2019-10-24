@@ -1,4 +1,4 @@
-from tqdm import tqdm
+from python_modules.tqdm import tqdm
 import requests
 import gzip
 import shutil

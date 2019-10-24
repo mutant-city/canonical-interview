@@ -1,3 +1,7 @@
+## Requirements
+* Requires Python3+
+
+
 ## Install
 1. Install dependencies locally
     * Inside of the project folder:
