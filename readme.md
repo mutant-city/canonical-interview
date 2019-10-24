@@ -3,11 +3,11 @@
     * `pip install --target python_modules  -r requirements.txt`
 
 ## Run
-* The config file has adjustable parameters
+* The config file has adjustable parameters with sane defaults.
 
 ## Project Summary
 * This was an interesting project, that tested multiple facets of development:
- File system usage, parsing files, http requests, some light algorithms,
+ file system usage, parsing files, http requests, some light algorithms,
  dealing with non trivial data sets. 
  
 * I viewed this as basically a hot caching problem. 
