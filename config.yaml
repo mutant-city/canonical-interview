@@ -1,0 +1,10 @@
+# No trailing slashes on paths!
+
+# the url to use
+mirror_url: http://ftp.uk.debian.org/debian/dists/stable/main
+
+# where the file is downloaded locally
+output_location: /tmp
+
+# The number of items to hot cache
+number_of_items: 10
